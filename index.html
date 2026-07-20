@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0d789e" />
+  <meta name="description" content="Invitación al primer cumpleaños de Franchesca" />
+  <title>Franchesca · Mi primer añito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button class="sound-toggle" id="soundToggle" aria-label="Activar o desactivar sonido" title="Sonido ambiente">♪</button>
+
+  <header class="hero" id="inicio">
+    <div class="sun-rays" aria-hidden="true"></div>
+    <div class="bubbles" aria-hidden="true"></div>
+    <img class="hero-img hero-img-a"
+     src="assets/hermanita.png"
+     alt=""
+     aria-hidden="true">
+
+<img class="hero-img hero-img-b"
+     src="assets/hermana1.png"
+     alt=""
+     aria-hidden="true">
+
+<img class="hero-img hero-img-c"
+     src="assets/hermana2.png"
+     alt=""
+     aria-hidden="true">
+
+<img class="hero-img hero-img-d"
+     src="assets/hermana3.png"
+     alt=""
+     aria-hidden="true">
+    <div class="fish fish-a" aria-hidden="true">🐟</div>
+    <div class="fish fish-b" aria-hidden="true">🐠</div>
+    <div class="fish fish-c" aria-hidden="true">🐡</div>
+
+     <!-- Ponyo -->
+    <img
+        class="ponyo"
+        src="assets/ponyo-nadando.png"
+        alt=""
+        aria-hidden="true"
+    >
+
+    <div class="hero-content reveal">
+      <div class="logo-shell">
+        <img id="eventLogo" src="assets/logo-franchu.png" alt="Franchesca, mi primer añito" onerror="this.hidden=true; document.querySelector('.logo-fallback').hidden=false;" />
+        <div class="logo-fallback" hidden>
+          <span class="logo-name"></span>
+          <span class="logo-subtitle">mi primer añito</span>
+        </div>
+      </div>
+
+      <p class="hero-copy">Te invito a celebrar mi primer cumpleaños en un día lleno de magia, juegos y mucha diversión.</p>
+      <a class="btn btn-coral btn-large" href="#fecha">Comenzar la aventura <span>🐚</span></a>
+      <a class="scroll-indicator" href="#fecha" aria-label="Bajar a la información"></a>
+    </div>
+
+    <div class="reef reef-left" aria-hidden="true">🪸🌿</div>
+    <div class="reef reef-right" aria-hidden="true">🌿🪸</div>
+    <div class="wave-divider" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="section paper" id="fecha">
+      <div class="section-inner reveal">
+        <p class="eyebrow">🐟 🐠 🐟</p>
+        <h2>Guardá esta fecha</h2>
+
+        <div class="cards-grid">
+          <article class="info-card">
+            <div class="card-icon">🗓️</div>
+            <div>
+              <span class="label">Fecha</span>
+              <strong>5 de septiembre</strong>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon">⏰</div>
+            <div>
+              <span class="label">Horario</span>
+              <strong>13:00 a 15:30 hs</strong>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <div class="card-icon">🎂</div>
+            <div>
+              <span class="label">Motivo</span>
+              <strong>Mi primer cumpleaños</strong>
+            </div>
+          </article>
+        </div>
+
+        <div class="countdown" aria-live="polite">
+          <p>Faltan</p>
+          <div class="countdown-grid">
+            <div><strong id="days">00</strong><span>días</span></div>
+            <div><strong id="hours">00</strong><span>horas</span></div>
+            <div><strong id="minutes">00</strong><span>minutos</span></div>
+            <div><strong id="seconds">00</strong><span>segundos</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="wave-divider wave-bottom" aria-hidden="true"></div>
+    </section>
+
+    <section class="section ocean-light" id="lugar">
+      <div class="section-inner reveal">
+        <h2>¿Dónde será?</h2>
+        <div class="location-layout">
+          <div class="location-copy">
+            <div class="pin">📍</div>
+            <p><strong>Estación Arco Iris Multieventos</strong></p>
+            <p>Senguel 6000, esquina Almagro<br>González Catán</p>
+            <p class="small">En la esquina de la terminal 180</p>
+          </div>
+
+          <div class="map-card">
+            <iframe
+              title="Mapa de Estación Arco Iris Multieventos"
+              src="https://www.google.com/maps?q=Senguel%206000%20esquina%20Almagro%2C%20Gonz%C3%A1lez%20Cat%C3%A1n&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a class="btn btn-blue" id="mapsButton" target="_blank" rel="noopener">Cómo llegar 🧭</a>
+          </div>
+        </div>
+      </div>
+      <div class="wave-divider" aria-hidden="true"></div>
+    </section>
+
+    <section class="section paper" id="agenda">
+      <div class="section-inner reveal">
+        <h2>No te olvides</h2>
+        <p class="section-lead">Agendá el cumple para tener todos los datos a mano.</p>
+
+        <div class="actions-grid">
+          <a class="btn btn-coral" id="calendarButton" target="_blank" rel="noopener">📅 Agregar a Google Calendar</a>
+          <a class="btn btn-blue" id="mapsButtonSecondary" target="_blank" rel="noopener">📍 Abrir en Google Maps</a>
+        </div>
+
+        <p class="privacy-note">🔒 El evento se agrega directamente a tu calendario.</p>
+      </div>
+      <div class="wave-divider wave-bottom" aria-hidden="true"></div>
+    </section>
+
+    <section class="section ocean-medium" id="confirmar">
+      <div class="section-inner reveal">
+        <h2>¿Venís?</h2>
+        <p class="section-lead">Confirmá tu asistencia para que no falte nada.</p>
+        <a class="btn btn-whatsapp btn-large" id="whatsappButton" 
+        href="https://api.whatsapp.com/send?phone=541158553691&text=Hola%20%F0%9F%98%8A%0AQuiero%20confirmar%20mi%20asistencia%20al%20primer%20cumplea%C3%B1os%20de%20Franchesca%20el%205%20de%20septiembre.%0A%0ANombre:%0ACantidad%20de%20adultos:%0ACantidad%20de%20ni%C3%B1os:" target="_blank" rel="noopener">
+          💬 Confirmar por WhatsApp</a>
+        <p class="closing-copy">Te esperamos para compartir una tarde inolvidable.</p>
+      </div>
+      <div class="sea-floor" aria-hidden="true">🌿 🐚 🪸 🐟 🐠 🪸 🐚 🌿</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Gracias por ser parte de mi historia ❤️</p>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/ponyo.wav" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn">
+    🔊 Activar música
+</button>
+
+</body>
+</html>
